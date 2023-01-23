@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+    font-family: 'cairo' , sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    width: 98%;
+    display: block;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+main header {
+    font-weight: 700;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+nav header {
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    height: 5%;
+    background-color: #eee;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    flex-basis: 70%;
+
+}
+nav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2em;
+    
+}
+nav ul li a:visited {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: rgb(33, 122, 33);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+
+    }
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    nav ul li {
+        margin-top: 10px;
+    }
+    
+  }
